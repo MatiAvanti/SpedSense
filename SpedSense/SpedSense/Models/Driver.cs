@@ -10,7 +10,7 @@ namespace SpedSense.Models
     {
         Boolean hasADR { get; set; }
         ICollection<Order> Orders { get; set; }
-        Hauler hauler { get; set; }
+        public Hauler hauler { get; set; }
 
         public Driver(string name, string surname, float wage, bool hasADR) : base(name, surname, wage)
         {
@@ -21,11 +21,8 @@ namespace SpedSense.Models
             Orders.Add(order);
 
             //callback
-            order.setDriver(this);
+            order.driver = this;
         }
-        public void setHauler(Hauler hauler)
-        {
-            this.hauler = hauler;
-        }
+        
     }
 }

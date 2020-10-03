@@ -15,17 +15,9 @@ namespace SpedSense.Models
         int paymentDuration { get; set; }
         String loadingLocation { get; set; }
         String destination { get; set; }
-        Driver driver { get; set; }
-        Principal principal{ get; set;}
+        public Driver driver { get; set; }
+        public Principal principal{ get; set;}
 
-        public void setDriver(Driver driver)
-        {
-            this.driver = driver;
-        }
-        public void setPrincip(Principal principal)
-        {
-            this.principal = principal;
-        }
         public enum LoadType
         {
             COOLED,

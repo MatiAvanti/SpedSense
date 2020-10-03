@@ -18,7 +18,7 @@ namespace SpedSense.Models
             Orders.Add(order);
 
             //callback
-            order.setPrincip(this);
+            order.principal = this;
         }
     }
 }

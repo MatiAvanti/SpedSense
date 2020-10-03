@@ -19,7 +19,7 @@ namespace SpedSense.Models
         {
             drivers.Add(driver);
 
-            driver.setHauler(this);
+            driver.hauler = this;
         }
     }
 }
