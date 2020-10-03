@@ -18,7 +18,7 @@ namespace SpedSense.Models
         void addDriver(Driver driver)
         {
             drivers.Add(driver);
-
+            //test
             //callback
             driver.hauler = this;
         }
